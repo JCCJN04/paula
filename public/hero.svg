@@ -1,0 +1,5 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#efeae3"/>
+  <text x="600" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#9c938e">Paula — XV Años</text>
+  <text x="600" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#b09e7e">Reemplaza con hero.jpg</text>
+</svg>

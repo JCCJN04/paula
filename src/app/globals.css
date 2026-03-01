@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@theme {
+  /* Creamy Off-White */
+  --color-warm-50: #faf7f2;
+  --color-warm-100: #f2ebe4;
+  --color-warm-200: #e8dcd2;
+  --color-warm-300: #d6bfae;
+
+  /* Rose / Pink tones */
+  --color-rose-50: #fcf6f6;
+  --color-rose-100: #f5e8e8;
+  --color-rose-200: #ebd1d0;
+  --color-rose-300: #e6b2b1;
+  /* Matches Dusty Rose */
+
+  /* Accents */
+  --color-accent: #e6b2b1;
+  /* Dusty Rose - Name and tiara */
+  --color-accent-light: #c58e7f;
+  /* Rose Gold / Copper */
+  --color-accent-muted: #a6634b;
+  /* Terracotta / Rust */
+
+  /* Typography */
+  --color-ink: #8c7a73;
+  /* Warm Taupe */
+  --color-ink-secondary: #7a6861;
+  /* Slightly darker taupe for contrast */
+  --color-ink-tertiary: #a0908a;
+  /* Lighter taupe */
+
+  --font-display: "DM Serif Display", "Georgia", serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-warm-50);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-size: clamp(15px, 1vw + 12px, 17px);
+  line-height: 1.6;
+}
+
+/* ensure the root container doesn't exceed 100% of its max-width wrapper */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Subtle texture ---------- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* ---------- Scroll Reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-d1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-d2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-d3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-d4 {
+  transition-delay: 0.4s;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-bounce {
+
+  0%,
+  100% {
+    transform: rotate(45deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(45deg) translateY(4px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease both;
+}
+
+.animate-fade-in-up-d1 {
+  animation: fadeInUp 0.7s 0.08s ease both;
+}
+
+.animate-fade-in-up-d2 {
+  animation: fadeInUp 0.7s 0.16s ease both;
+}
+
+.animate-fade-in-up-d3 {
+  animation: fadeInUp 0.7s 0.3s ease both;
+}
+
+.animate-fade-in-up-d4 {
+  animation: fadeInUp 0.7s 0.45s ease both;
+}
+
+.animate-fade-in-up-d5 {
+  animation: fadeInUp 0.7s 0.6s ease both;
+}
+
+.animate-fade-in-up-d6 {
+  animation: fadeInUp 0.7s 0.8s ease both;
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 2.5s ease-in-out infinite;
+}
+
+/* ---------- Gallery ---------- */
+.gallery-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-rose-300);
+  border-radius: 2px;
+}

@@ -1,0 +1,5 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#efeae3"/>
+  <text x="400" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#9c938e">Templo de San Pablo</text>
+  <text x="400" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#b09e7e">Reemplaza con iglesia.jpg</text>
+</svg>
