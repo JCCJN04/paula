@@ -34,7 +34,7 @@ export default function AudioPlayer({ isPlaying, onToggle }: AudioPlayerProps) {
             {/* We use the provided mp4 file. The audio tag will play the audio track. */}
             <audio
                 ref={audioRef}
-                src="/Taylor Swift - Lover (Official Music Video).mp4"
+                src="/paulaxv/Taylor Swift - Lover (Official Music Video).mp4"
                 loop
             />
 
