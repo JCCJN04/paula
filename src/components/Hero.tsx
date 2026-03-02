@@ -6,7 +6,7 @@ import Image from "next/image";
  *   then change HERO_SRC to "/hero.jpg" and set SHOW_IMAGE = true.
  */
 const SHOW_IMAGE = false;
-const HERO_SRC = "/paula_main.jpeg";
+const HERO_SRC = "/paulaxv/paula_main.jpeg";
 
 export default function Hero() {
   return (

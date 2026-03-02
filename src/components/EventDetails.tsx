@@ -114,7 +114,7 @@ export default function EventDetails() {
             location="Templo de San Pablo Las Fuentes"
             mapUrl="https://share.google/aek5cNZYmCyn8oV3i"
             mapEmbed="https://maps.google.com/maps?q=Templo+San+Pablo+Las+Fuentes+Puebla+Mexico&output=embed&hl=es&z=16"
-            imageSrc="/iglesia.png"
+            imageSrc="/paulaxv/iglesia.png"
             imageAlt="Templo de San Pablo Las Fuentes"
           />
         </div>
@@ -128,7 +128,7 @@ export default function EventDetails() {
           address="Colonia Las Fuentes"
           mapUrl="https://share.google/le2qLjjaIACAO22vp"
           mapEmbed="https://maps.google.com/maps?q=Las+Calandrias+Eventos+Colonia+Las+Fuentes+Puebla+Mexico&output=embed&hl=es&z=16"
-          imageSrc="/salondeeventos.png"
+          imageSrc="/paulaxv/salondeeventos.png"
           imageAlt="Las Calandrias Eventos"
         />
       </div>

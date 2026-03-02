@@ -4,8 +4,8 @@ import { useState, useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
 
 const slides = [
-  { src: "/paula1.jpeg", alt: "Paula – Foto 1" },
-  { src: "/paula2.jpeg", alt: "Paula – Foto 2" },
+  { src: "/paulaxv/paula1.jpeg", alt: "Paula – Foto 1" },
+  { src: "/paulaxv/paula2.jpeg", alt: "Paula – Foto 2" },
 ];
 
 export default function Gallery() {

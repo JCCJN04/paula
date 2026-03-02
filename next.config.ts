@@ -3,7 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   basePath: "/paulaxv",
-  assetPrefix: "/paulaxv/",
   images: {
     unoptimized: true,
     dangerouslyAllowSVG: true,

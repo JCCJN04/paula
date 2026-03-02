@@ -34,7 +34,7 @@ export default function EntranceOverlay({ onOpen }: EntranceOverlayProps) {
       {/* Background Image Container */}
       <div className="absolute inset-0 w-full overflow-hidden -z-10">
         <Image
-          src="/paula_main.jpeg"
+          src="/paulaxv/paula_main.jpeg"
           alt="Paula – XV Años"
           fill
           priority
