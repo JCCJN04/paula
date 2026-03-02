@@ -49,9 +49,33 @@ export default function Hero() {
 
           <div className="animate-fade-in-up-d4 w-12 h-px bg-accent-muted mt-6 mb-3" />
 
-          <p className="animate-fade-in-up-d4 text-[0.7rem] tracking-[0.18em] uppercase text-ink-secondary">
+          <p className="animate-fade-in-up-d4 text-[0.7rem] tracking-[0.18em] uppercase text-ink-secondary mb-10">
             Sábado 25 de julio de 2026
           </p>
+
+          {/* Families section */}
+          <div className="animate-fade-in-up-d5 space-y-6">
+            <div>
+              <p className="text-[0.6rem] tracking-[0.2em] uppercase text-ink-tertiary mb-1">
+                En compañía de mis padres
+              </p>
+              <p className="font-display text-xl text-ink">
+                Crosby Marks
+              </p>
+              <p className="font-display text-xl text-ink">
+                Margarita Mendoza de Marks
+              </p>
+            </div>
+            
+            <div>
+              <p className="text-[0.6rem] tracking-[0.2em] uppercase text-ink-tertiary mb-1">
+                Y mi madrina
+              </p>
+              <p className="font-display text-xl text-ink">
+                Itta Diaz
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

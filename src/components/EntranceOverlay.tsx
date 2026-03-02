@@ -46,28 +46,30 @@ export default function EntranceOverlay({ onOpen }: EntranceOverlayProps) {
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
-      <p className="relative z-10 text-[0.7rem] tracking-[0.3em] uppercase text-ink-tertiary mb-4">
-        Estás invitado(a)
-      </p>
+      <div className="relative z-10 flex flex-col items-center mt-auto mb-20 p-8 rounded-2xl bg-white/70 backdrop-blur-md shadow-xl border border-white/40 w-[85%] max-w-sm">
+        <p className="text-[0.7rem] tracking-[0.3em] uppercase text-ink-tertiary mb-4">
+          Estás invitado(a)
+        </p>
 
-      <h1 className="relative z-10 font-display text-4xl text-ink mb-2">
-        Mis XV Años
-      </h1>
+        <h1 className="font-display text-4xl text-ink mb-2">
+          Mis XV Años
+        </h1>
 
-      <div className="relative z-10 w-10 h-px bg-accent-muted mb-8" />
+        <div className="w-10 h-px bg-accent-muted mb-8" />
 
-      <button
-        onClick={() => {
-          setHidden(true);
-          if (onOpen) onOpen();
-          setTimeout(() => setMounted(false), 1000);
-        }}
-        className="relative z-10 px-8 py-3 rounded-full text-ink text-[0.7rem] font-medium
-          tracking-[0.2em] uppercase border border-accent bg-transparent
-          hover:bg-accent hover:text-white transition-all duration-300 cursor-pointer"
-      >
-        Abrir invitación
-      </button>
+        <button
+          onClick={() => {
+            setHidden(true);
+            if (onOpen) onOpen();
+            setTimeout(() => setMounted(false), 1000);
+          }}
+          className="px-8 py-3 rounded-full text-ink text-[0.7rem] font-medium
+            tracking-[0.2em] uppercase border border-accent bg-transparent
+            hover:bg-accent hover:text-white transition-all duration-300 cursor-pointer"
+        >
+          Abrir invitación
+        </button>
+      </div>
     </div>
   );
 }
