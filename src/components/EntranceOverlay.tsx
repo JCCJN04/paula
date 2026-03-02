@@ -27,7 +27,7 @@ export default function EntranceOverlay({ onOpen }: EntranceOverlayProps) {
 
   return (
     <div
-      className={`absolute inset-0 z-[9999] flex flex-col items-center justify-center text-center bg-warm-50
+      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center text-center bg-warm-50
         transition-all duration-1000 ease-in-out
         ${hidden ? "-translate-y-full opacity-0 pointer-events-none" : "translate-y-0 opacity-100"}`}
     >
@@ -43,7 +43,7 @@ export default function EntranceOverlay({ onOpen }: EntranceOverlayProps) {
           sizes="100vw"
         />
         {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-warm-50/60" />
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       <p className="relative z-10 text-[0.7rem] tracking-[0.3em] uppercase text-ink-tertiary mb-4">
