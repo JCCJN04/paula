@@ -59,8 +59,11 @@ export default function Rsvp() {
       <div className="reveal reveal-d1 max-w-md">
         {!submitted ? (
           <>
-            <p className="text-sm text-ink-secondary mb-8 max-w-sm">
+            <p className="text-sm text-ink-secondary mb-2 max-w-sm">
               Tu presencia es el mejor regalo. Por favor confirma tu asistencia.
+            </p>
+            <p className="text-sm font-medium text-ink-secondary mb-8 max-w-sm">
+              Por favor de confirmar para antes del 10 de Junio de 2026.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-5">

@@ -1,7 +1,18 @@
+"use client";
+
 import Script from "next/script";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Footer() {
+  useEffect(() => {
+    // @ts-ignore
+    if (typeof window !== "undefined" && window.Tally) {
+      // @ts-ignore
+      window.Tally.loadEmbeds();
+    }
+  }, []);
+
   return (
     <footer className="bg-warm-100 py-16 px-6 relative w-full overflow-hidden">
       <div className="reveal max-w-md mx-auto flex flex-col items-center text-center">
@@ -18,7 +29,10 @@ export default function Footer() {
         </div>
 
         <div className="mb-16 w-full">
-          <h3 className="font-display italic text-2xl text-ink mb-6">RSVP</h3>
+          <h3 className="font-display italic text-2xl text-ink mb-2">RSVP</h3>
+          <p className="text-sm font-medium text-ink-secondary mb-6">
+            Por favor de confirmar para antes del 10 de Junio de 2026
+          </p>
           <iframe
             data-tally-src="https://tally.so/embed/Gx06R2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
