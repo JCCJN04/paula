@@ -6,6 +6,7 @@ import CountdownSection from "@/components/CountdownSection";
 import EventDetails from "@/components/EventDetails";
 import Timeline from "@/components/Timeline";
 import Gallery from "@/components/Gallery";
+import MesaRegalos from "@/components/MesaRegalos";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import EntranceOverlay from "@/components/EntranceOverlay";
@@ -24,6 +25,7 @@ export default function Home() {
         <EventDetails />
         <Timeline />
         <Gallery />
+        <MesaRegalos />
         <Footer />
       </main>
     </ScrollReveal>
