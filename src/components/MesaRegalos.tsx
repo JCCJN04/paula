@@ -15,8 +15,9 @@ export default function MesaRegalos() {
 
       <div className="reveal reveal-d1">
         <p className="text-sm text-ink-secondary mb-10 max-w-lg">
-          El mejor regalo es tu presencia. Pero si deseas tener un detalle conmigo,
-          puedes encontrar algunas sugerencias en mi mesa de regalos de Liverpool.
+          El mejor regalo es tu presencia. Si deseas tener un detalle adicional,
+          puedes consultar mi mesa de regalos en Liverpool o utilizar el buzón para
+          sobres el día del evento.
         </p>
 
         <div className="grid grid-cols-1 gap-8 max-w-md mx-auto sm:max-w-xs md:max-w-sm">
